@@ -1,0 +1,7 @@
+# Importing spark session
+from pyspark.sql import SparkSession
+
+#Creating/Building Spark Session
+spark=SparkSession.builder
+                  .appName("Choice is ours to fill in the appname")
+                  .getOrCreate()
