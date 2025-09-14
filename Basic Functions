@@ -1,0 +1,21 @@
+# Importing packages
+import pyspark
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import *
+
+# Initilization of Spark Session
+spark=SparkSession.builder.appName("Can be anything").getOrCreate()
+
+#Reading csv file
+#Csv file is available in Pyspark folder
+df=spark.read.csv("yellow_tripdata_2019_01.csv",header=True,inferSchema=True)
+
+#Shows the output of the dataframe df which is read from the csv file
+df.show()
+
+#Dataframe is converted to Pandas
+df1=df.toPandas()
+df1.show()
+
+# 1.Selecting column
+
