@@ -1,2 +1,2 @@
 # PySpark
-This repository contains PySpark notes and hands-on examples for learning and practicing big data processing.
+This repository contains PySpark notes and hands-on examples for learning and big data processing.
